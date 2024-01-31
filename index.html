@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
     <title>E-Groceries</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h3>Grocer-E</h3>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#packagesHeader">Our Package</a></li>
+          <li><a href="#call">Call Us</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="home">
+          <h2>Top Rated E-Groceries Shop in Indonesia</h2>
+          <h5>Every Day with best ingredients</h5>
+
+          <div class="home row">
+            <div class="banner column">
+              <figure>
+                <img src="images/fruits1.jpg" alt="Fruits and Vegetables" class="slide-img">
+                <img src="images/veggies1.jpg" alt="Fruits and Vegetables" class="slide-img">
+                <img src="images/veggies2.jpg" alt="Fruits and Vegetables" class="slide-img">
+                <figcaption>"Buy fresh fruits and vegetables here everyday"</figcaption>
+              </figure>
+              <div class="icon-with-description" id="user">
+                <div class="circle"><img src="images/icons/user-regular.svg" class="icon"></div>
+                <div class="column">
+                  <span class="small bold">Florence Hughes</span>
+                  <span id="user-caption">Housewife, 28</span>
+                </div>
+              </div>
+              <div class="divider"></div>
+            </div>
+            <div class="form-container">
+              <div>
+                <h4>Contact Us</h4>
+                <p>Sales will contact you 1x24 hours after we receive your data.</p>
+              </div>
+              <form name="contactUs">
+                <label for="name" class="small bold">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Full name" autocomplete="name">
+                <label for="email" class="small bold">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email">
+                <label for="interest" class="small bold">What are you interested in?</label>
+                <select name="interest" id="interest">
+                  <option value="0" disabled selected>Select option</option>
+                  <option value="1">Fruits</option>
+                  <option value="2">Vegetables</option>
+                  <option value="3">Both</option>
+                </select>
+                <button type="button" id="submitBtn">SEND</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="features">
+            <span class="small bold">Experience the epitome of convenience with our e-grocery service. Here are the benefits you can get by using Grocer-E:</span>
+            <div class="icon-with-description">
+              <div class="circle">1</div>
+              <p>Grocer-E provides the convenience of shopping for groceries from the comfort of your home.</p>
+            </div>
+            <div class="icon-with-description">
+              <div class="circle">2</div>
+              <p>Extensive and varied selection of products, ensuring access to everything from everyday essentials to specialty items.</p>
+            </div>
+            <div class="icon-with-description">
+              <div class="circle">3</div>
+              <p>Savor the assurance of freshness with quality products, ensuring every meal is vibrant, nutritious, and at its peak flavor.</p>
+            </div>
+          </div>
+        </section>
+
+        <div id="packagesHeader" class="header">
+          <h2>Our Packages</h2>
+        </div>
+        <section id="packages">
+          <div class="row">
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/carrot-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Fresh Vegetables</span>
+                  <p>Fresh vegetables straight from the best farms</p>
+                </div>
+              </div>
+            </div>
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/apple-whole-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Fresh Fruit</span>
+                  <p>Fruits with the best qualities, whether local or imported, with economic prices</p>
+                </div>
+              </div>
+            </div>
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/truck-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Instant Delivery</span>
+                  <p>Sent instantly by couriers who have been trained with SOPs to maintain the condition of your shopping goods</p>
+                </div>
+              </div>
+            </div>
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/cubes-stacked-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Kitchen ingredients</span>
+                  <p>Complete kitchen spices for your cooking needs</p>
+                </div>
+              </div>
+            </div>
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/kitchen-set-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Kitchen Set</span>
+                  <p>All kinds of cooking utensils to help you cook</p>
+                </div>
+              </div>
+            </div>
+            <div class="package">
+              <div class="icon-with-description">
+                <div class="circle"><img src="images/icons/box-open-solid.svg" class="icon"></div>
+                <div class="desc">
+                  <span class="small bold">Bundling Set</span>
+                  <p>Don't know what to cook? Fresh ingredients are available in bundles for you to cook</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="call">
+          <h2>Elevate Your Everyday with Grocer-E: Where Freshness Meets Convenience, One Click at a Time!</h2>
+          <p>Discover unparalleled convenience and freshness at Grocer-E. Elevate your meals with a diverse selection of premium products, delivered to your doorstep. Quality and convenience at your fingertips!</p>
+          <button>CALL TO ACTION</button>
+        </section>
+      </main>
+
+      <footer>
+        <h3>Grocer-E</h3>
+        <p>Terms of Service &nbsp;&nbsp; Privacy Policy</p>
+        <p>© 2024 &nbsp;&nbsp; made by Rio Agasta</p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

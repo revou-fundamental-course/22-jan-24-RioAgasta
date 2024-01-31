@@ -1,0 +1,555 @@
+/* CSS Reset START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6, */
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS Reset END */
+
+/* Body and Container START*/
+body {
+  background-color: #eee;
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 0 1px 0 #ddd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+/* Body and Container END */
+
+/* Navigation START */
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.container nav h3 {
+  font-family: "caveat", cursive;
+}
+
+.container nav ul {
+  display: flex;
+  max-width: 40%;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.container nav ul li {
+  border: 1px solid black;
+}
+
+.container nav ul li a {
+  color: unset;
+  text-decoration: none;
+}
+
+.container nav ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.container nav ul li:first-child {
+  padding: 5px 20px;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.container nav ul li:nth-child(2) {
+  padding: 5px 5px;
+}
+
+.container nav ul li:last-child {
+  padding: 5px 15px;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* Navigation END */
+
+/* Main START */
+section {
+  box-sizing: border-box;
+  padding: 30px 30px;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin: 15px 0;
+  font-style: italic;
+  font-size: 12px;
+  color: #888;
+}
+
+p {
+  color: #888;
+  font-size: 10px;
+  line-height: 1.5em;
+}
+
+form {
+  margin-top: 40px;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 8px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:valid {
+  outline: none;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  background-color: #333;
+  color: #eee;
+  font-weight: bold;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+}
+
+#call button {
+  width: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #222;
+}
+
+button:active {
+  background-color: #666;
+}
+
+#home h2,
+h5 {
+  padding: 0 20%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#home h5 {
+  color: #888;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#user {
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+#user-caption {
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 5px;
+  color: #888;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-right: 15px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 12px sans-serif;
+  color: #888;
+}
+
+.divider {
+  height: 3px;
+  width: 100px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner.column {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icon {
+  padding: 10.5px;
+}
+
+.icon-with-description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #eee;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 42%;
+}
+
+.form-container div h4 {
+  margin-bottom: 5px;
+}
+
+.features {
+  width: 55%;
+}
+
+.features .icon-with-description {
+  margin: 15px 0;
+}
+
+.features .icon-with-description p {
+  width: 55%;
+}
+
+main .header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #eee;
+}
+
+#packages {
+  border-bottom: 1px solid #eee;
+}
+
+#packages .row {
+  flex-wrap: wrap;
+}
+
+#packages .row .package {
+  max-width: 33%;
+  margin: 10px 0;
+}
+
+#packages .row .package .icon-with-description {
+  align-items: initial;
+}
+
+.package .desc {
+  width: 65%;
+}
+
+.package .desc p {
+  margin-top: 5px;
+}
+
+#call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+#call h2 {
+  margin-bottom: 20px;
+}
+
+#call p {
+  margin-bottom: 20px;
+  max-width: 60%;
+}
+/* Main END */
+
+/* Footer START */
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "caveat", cursive;
+  margin-bottom: 10px;
+}
+/* Footer END */
+
+/* Responsive UI */
+
+/* Tablet and Landscape Phone */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .container nav ul {
+    max-width: 80%;
+  }
+
+  .container main #home h2 {
+    padding: 0 10%;
+  }
+
+  .home.row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner.column {
+    max-width: 100%;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .features {
+    width: 100%;
+  }
+
+  #packages .row .package {
+    max-width: 45%;
+  }
+
+  #packages .row {
+    justify-content: space-between;
+  }
+
+  #call p {
+    max-width: 75%;
+  }
+
+  #call button {
+    width: 50%;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 480px) {
+  .container nav {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .container nav h3 {
+    padding-bottom: 10px;
+  }
+
+  .container nav ul {
+    /* background-color: black; */
+    max-width: 90%;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .container main #home h2 {
+    padding: 0 5%;
+  }
+
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  #packages .row .package {
+    max-width: 95%;
+  }
+}
